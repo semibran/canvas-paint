@@ -1,7 +1,7 @@
 module.exports = function Draw(canvas) {
 
 	var context = canvas.getContext('2d')
-	var methods = { fill, clear, rect, image }
+	var methods = { fill, clear, rect, image, pixels }
 
 	return methods
 
@@ -40,4 +40,11 @@ module.exports = function Draw(canvas) {
 			return methods
 		}
 	}
+
+  function pixels(imageData) {
+    if (!imageData)
+      return context.getImageData(0, 0, canvas.width, canvas.height)
+    context.putImageData(imageData, 0, 0)
+    return methods
+  }
 }

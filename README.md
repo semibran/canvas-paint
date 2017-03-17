@@ -12,6 +12,7 @@ draw
   .clear(x, y, width, height)
   .rect(color)(x, y, width, height)
   .image(image)(x, y, width, height)
+  .pixels(imageData) // or omit argument to get pixel data
 ```
 
 ## Installation
