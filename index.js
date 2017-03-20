@@ -6,6 +6,7 @@ module.exports = function Draw(canvas) {
     , clear
     , rect
     , circle
+    , arc
     , image
     , pixels
     }
@@ -39,12 +40,19 @@ module.exports = function Draw(canvas) {
 
   // circle(color, radius)(x, y)
   function circle(color, radius) {
+    return arc(color, radius, 0, 360)
+  }
+
+  // arc(color, radius, startAngle, endAngle, anticlockwise)(x, y)
+  function arc(color, radius, startAngle, endAngle, anticlockwise) {
+    startAngle = (startAngle - 90) * Math.PI / 180
+    endAngle = (endAngle - 90) * Math.PI / 180
     return function at(x, y) {
       context.fillStyle = color
       context.beginPath()
-      context.arc(x, y, radius, 0, Math.PI * 2)
+      context.arc(x, y, radius, startAngle, endAngle, anticlockwise)
+      context.lineTo(x, y)
       context.fill()
-      return methods
     }
   }
 

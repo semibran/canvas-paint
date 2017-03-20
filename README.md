@@ -11,6 +11,7 @@ Draw(canvas)
   .clear(width, height)(x, y) // or clear whole canvas with `clear()`
   .rect(color, width, height)(x, y)
   .circle(color, radius)(x, y)
+  .arc(color, radius, 0, 90)(x, y) // accepts angles instead of radians
   .image(image, width, height)(x, y) // or omit width and height to use natural dimensions
   .pixels(imageData) // or omit argument to get pixel data
 ```
