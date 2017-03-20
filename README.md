@@ -6,12 +6,12 @@
 ```javascript
 const Draw = require('canvas-draw')
 
-var draw = Draw(canvas)
-draw
+Draw(canvas)
   .fill('black')
-  .clear(x, y, width, height)
-  .rect(color)(x, y, width, height)
-  .image(image)(x, y, width, height)
+  .clear(width, height)(x, y) // or clear whole canvas with `clear()`
+  .rect(color, width, height)(x, y)
+  .circle(color, radius)(x, y)
+  .image(image, width, height)(x, y) // or omit width and height to use natural dimensions
   .pixels(imageData) // or omit argument to get pixel data
 ```
 
