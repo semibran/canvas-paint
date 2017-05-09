@@ -1,7 +1,7 @@
 {
   "name": "canvas-draw",
-  "version": "1.1.0",
-  "description": "Drawing methods for Canvas API",
+  "version": "0.1.0",
+  "description": "Drawing methods for <canvas> API",
   "license": "MIT",
   "author": "Brandon Semilla <semibran@gmail.com>",
   "main": "index.js",
