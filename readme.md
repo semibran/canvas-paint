@@ -8,7 +8,7 @@ npm install canvas-paint
 
 ## usage
 ```js
-const { fill, clear, ... } = require('canvas-paint')
+const paint = require('canvas-paint')
 ```
 
 ### `fill(canvas, color)`
@@ -101,7 +101,7 @@ The above code draws the following image:
 
 ### `image(canvas, options)`
 ```js
-paint.image(canvas, {
+image(canvas, {
   image: sprites.wall,
   x: 32,
   y: 16,
@@ -136,6 +136,17 @@ Additionally, a couple of minor changes have been made to the API defaults.
 - `font.size` defaults to `16`
 - `align` defaults to `'left'`
 - `baseline` defaults to `'top'`
+
+## to do
+- [x] basic drawing methods
+- [ ] make fill/stroke blocks reusable
+- [ ] line cap, join, dash
+- [ ] shadows
+- [ ] gradients
+- [ ] compositing
+- [ ] masking
+- [ ] bezier curves
+- [ ] transforms (translation, rotation, scaling)
 
 ## license
 [MIT](https://opensource.org/licenses/MIT) © [Brandon Semilla](https://git.io/semibran)
