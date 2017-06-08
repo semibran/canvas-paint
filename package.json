@@ -1,0 +1,18 @@
+{
+ "name": "canvas-paint",
+ "version": "0.1.0",
+ "description": "Helper functions for drawing onto <canvas> elements",
+ "keywords": [
+  "html",
+  "canvas",
+  "paint",
+  "draw"
+ ],
+ "main": "lib",
+ "license": "MIT",
+ "author": "Brandon Semilla (https://github.com/semibran)",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/semibran/canvas-paint.git"
+ }
+}
