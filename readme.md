@@ -92,7 +92,7 @@ polygon(canvas, {
     { x: 64, y: 112 },
     { x: 16, y: 64 },
   ],
-  fill: 'purple'
+  fill: 'red'
 })
 ```
 The above code draws the following image:
