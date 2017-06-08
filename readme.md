@@ -1,5 +1,5 @@
 # canvas-paint
-> Helper functions for drawing to `<canvas>` elements
+> Helper functions for drawing onto `<canvas>` elements
 
 ## install
 ```sh
